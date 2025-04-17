@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Version mobile */
+
+      @media screen and (max-width: 767px) {
+        body {
+          background-color: hsl(212, 45%, 89%);
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          font-family: Outfit;
+        }
+
+        main {
+          border-radius: 1rem;
+          width: 305px;
+          margin: 0 auto;
+          background-color: #ffffff;
+          box-shadow: 0 0 0.1em #ffff;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 1.5rem;
+          padding: 1rem;
+        }
+
+        section {
+          padding: 0 1rem 1rem;
+          text-align: center;
+        }
+
+        section h1 {
+          padding-bottom: 1em;
+          color: hsl(218, 44%, 22%);
+          font-size: 1.5em;
+        }
+
+        p {
+          padding-bottom: 2em;
+          color: hsl(216, 15%, 48%);
+          font-size: 15px;
+        }
+      }
+
+      /* Version desktop */
+
+      @media screen and (min-width: 768px) {
+        body {
+          background-color: hsl(212, 45%, 89%);
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          font-family: Outfit;
+        }
+
+        main {
+          border-radius: 1rem;
+          width: 305px;
+          margin: 0 auto;
+          background-color: #ffffff;
+          box-shadow: 0 0 0.1em #ffff;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 1.5rem;
+          padding: 1rem;
+        }
+
+        section {
+          padding: 0 1rem 1rem;
+          text-align: center;
+        }
+
+        section h1 {
+          padding-bottom: 1em;
+          color: hsl(218, 44%, 22%);
+          font-size: 1.5em;
+        }
+
+        p {
+          padding-bottom: 2em;
+          color: hsl(216, 15%, 48%);
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <figure>
+        <img src="./images/image-qr-code.png" alt="un_qr_code" />
+      </figure>
+      <section>
+        <h1>
+          Improve your front-end <br />
+          skills by building projects
+        </h1>
+
+        <p>
+          Scan the QR code to visit Frontend <br />
+          Mentor and take your coding skills to <br />
+          the next level
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
