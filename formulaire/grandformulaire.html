@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un grand formulaire</title>
+    <link rel="stylesheet" href="grandformulaire.css">
+</head>
+
+<body>
+    <h3>Thank you for taking the time to help us improve the platform</h3>
+    <div class="divForm">
+        <form action="">
+            <label for="nom">Name</label><br>
+            <input id="nom" type="text" placeholder="Enter your name"><br>
+            <label for="mail">Email</label><br>
+            <input id="mail" type="email" placeholder="Enter your email"><br>
+            <label for="age">Age (optional)</label><br>
+            <input id="age" type="number" placeholder="Age"><br>
+            <label for="role">Which option best describes your current role?</label><br>
+            <select name="" id="role">
+                <option value="">Select current role</option>
+                <option value="">1</option>
+                <option value="">2</option>
+            </select>
+            <fieldset>
+                <legend>Would you recommend freeCodeChamp to a friend?</legend>
+                <input type="radio" name="recommendation" id="definitely">
+                <label for="definitely">Definitely</label><br>
+                <input type="radio" name="recommendation" id="maybe">
+                <label for="maybe">Maybe</label><br>
+                <input type="radio" name="recommendation" id="notSure">
+                <label for="notSure">Not sure</label>
+            </fieldset>
+
+            <label for="favoriteFeature">What is your favorite feature of freeCodeChamp?</label><br>
+            <select name="" id="favoriteFeature">
+                <option value="">Select an option</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+            </select>
+            <fieldset>
+                <legend>What would you like to see improved? (Check all that apply)</legend>
+                <input type="checkbox" name="improvement" id="front"><label for="front">Frontend Projects</label><br></input>
+                <input type="checkbox" name="improvement" id="back"><label for="back">Backend Projects</label><br></input>
+                <input type="checkbox" name="improvement" id="data"><label for="data">Data visualisation</label><br></input>
+                <input type="checkbox" name="improvement" id="challenges"><label for="challenges">challenges</label><br></input>
+                <input type="checkbox" name="improvement" id="open"><label for="open">open sources community</label><br></input>
+                <input type="checkbox" name="improvement" id="gitter"><label for="gitter">gitter help rooms</label><br></input>
+                <input type="checkbox" name="improvement" id="videos"><label for="videos">videos</label><br></input>
+                <input type="checkbox" name="improvement" id="city"><label for="city">city meetups</label><br></input>
+                <input type="checkbox" name="improvement" id="wiki"><label for="wiki">wiki</label><br></input>
+                <input type="checkbox" name="improvement" id="forum"><label for="forum">forum</label><br></input>
+                <input type="checkbox" name="improvement" id="courses"><label for="courses">additional courses</label></input>
+            </fieldset>
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea name="" id="comments" placeholder="Enter your comments here...."></textarea><br>
+            <input type="submit" value="Submit"></input>
+        </form>
+    </div>
+</body>
+
+</html>
