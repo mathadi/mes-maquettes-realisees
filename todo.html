@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Interactive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #task-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .task button {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>To-Do List Interactive 📝</h1>
+
+    <input type="text" id="task-input" placeholder="Ajouter une tâche..." />
+    <button id="add-task">Ajouter</button>
+
+    <ul id="task-list"></ul>
+
+    <script>
+        let input_text = document.getElementById("task-input"); //récupération de l'element input dans la variable input_text
+        let button_add = document.getElementById("add-task"); //recupere l'element button dans la variable button_add
+        let ul_list = document.getElementById("task-list"); //recupere l'element ul dans la variable ul_list
+
+        button_add.addEventListener("click", function (){
+            //au clic, un element li est crée et ajouté a l'element ul
+            const li_list = document.createElement("li");
+            let text_input = input_text.value;
+            li_list.textContent = text_input;
+            ul_list.appendChild(li_list);
+            //creation des boutons terminer et supprimer
+            const button_terminer = document.createElement("button");
+            button_terminer.textContent = "terminer"
+            const button_supprimer = document.createElement("button");
+            button_supprimer.textContent = "supprimer"
+            li_list.insertAdjacentElement("beforeend", button_terminer)
+            li_list.insertAdjacentElement("beforeend", button_supprimer)
+
+            button_terminer.addEventListener("click", function(){
+                li_list.classList.add("completed");
+            })
+
+            button_supprimer.addEventListener("click", function(){
+                ul_list.removeChild(li_list);
+            })
+
+            li_list.addEventListener("dblclick", function(){
+                let text_recup = prompt("nouvelle tache");
+                li_list.textContent = text_recup;
+                const button_terminer = document.createElement("button");
+                button_terminer.textContent = "terminer"
+                const button_supprimer = document.createElement("button");
+                button_supprimer.textContent = "supprimer"
+                li_list.insertAdjacentElement("beforeend", button_terminer)
+                li_list.insertAdjacentElement("beforeend", button_supprimer)
+                button_terminer.addEventListener("click", function(){
+                li_list.classList.add("completed");
+            })
+
+            button_supprimer.addEventListener("click", function(){
+                ul_list.removeChild(li_list);
+            })
+
+            })
+
+            input_text.value =""
+        })
+
+        const button_tout_supprimer = document.createElement("button");
+        button_tout_supprimer.innerText = "Tout supprimer"
+        button_add.insertAdjacentElement("afterend", button_tout_supprimer);
+        button_tout_supprimer.style.marginLeft= "10px";
+        button_tout_supprimer.addEventListener("click", function(){
+            const all_li = document.querySelectorAll("#task-list li")
+            for (let index = 0; index < all_li.length; index++) {
+                all_li[index].remove();
+
+                
+            }
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // let button_ajouter = document.getElementById("add-task");
+
+        // button_ajouter.addEventListener("", function () {
+            // let ul_liste = document.getElementById("task-list");
+            // let input_saisie = document.getElementById("task-input");
+            // let li_tache = document.createElement("li");
+            // let texte_ecrit = input_saisie.value;
+            // li_tache.className = "task"
+            // let span = document.createElement("span");
+            // span.textContent = texte_ecrit;
+            // li_tache.appendChild(span);
+            // ul_liste.appendChild(li_tache);
+
+            
+            // let btnSup = document.createElement("button");
+            // let textSup = document.createTextNode("Tout supprimer");
+            // btnSup.appendChild(textSup)
+            // document.body.appendChild(btnSup);
+        // })
+
+
+
+        //     btnSup.addEventListener("click", function (){
+        //         liste.removeChild();
+        //     })
+    </script>
+</body>
+
+</html>
