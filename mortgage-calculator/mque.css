@@ -1,0 +1,136 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(203, 41%, 72%);
+    font-family: "Plus Jakarta Sans", serif;      
+    height: 100vh;     
+}
+
+section{
+    display: flex;
+    background-color: white;
+    /* margin: 0 auto; */
+    border-radius: 15px;  
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+}
+
+.marge{
+    margin: 0 20px;
+}
+.calculator{
+    width: 50%;
+}
+
+.hautCalculator{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#btnClear{
+    position: relative;
+    left: 6px;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.w100{
+    width: 100%;
+}
+
+.inputAligner{
+    display: flex;
+}
+
+.ptitMarge{
+    margin-right: 10px;
+}
+
+.w50{
+    width: 50%;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset div{
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 100%;
+    height: 25px;
+}
+
+fieldset input{
+    position: relative;
+    margin: 0px;
+    top: 4px;
+    left: 4px;
+}
+
+fieldset label{
+    vertical-align: middle;
+    position: relative;
+    left: 5px;
+    top: 1px;
+}
+
+#btn{
+    background-color: hsl(61, 70%, 52%);
+    border-radius: 20px;
+    margin-top: 15px;
+    padding: 5px 20px;
+    border: none;
+    font-weight: bold;
+    width: 70%;
+}
+
+.centrerCalculate{
+    position: relative;
+    bottom: 5px;
+}
+
+.inputHauteur{
+    height: 28px;
+}
+.margeLetI{
+    margin-top: 5px;
+}
+
+#results{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(202, 55%, 16%);
+    border-radius: 0px 15px 15px 50px;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2, p{
+    color: hsl(202, 86%, 94%);
+}
+
+p{
+    margin: 0;
+}
+
+.margeInt{
+    padding: 5px 0 5px 5px;
+}
