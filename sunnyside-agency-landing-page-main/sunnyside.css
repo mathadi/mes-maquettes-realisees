@@ -1,0 +1,174 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 200px;
+}
+
+#headerS{
+    background-image: url(./images/desktop/image-header.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#titre{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+}
+
+img[alt="fleche"]{
+    position: relative;
+    left: 24em;
+    top: 80px;
+    height: 80px;
+}
+
+img[alt="logo"]{
+    margin: 10px;
+}
+
+ul{
+    list-style-type: none;
+    color: #fff;
+}
+
+li{
+    display: inline;
+}
+
+.entete{
+    display: flex;
+    justify-content: space-between;
+}
+
+#ligne1{
+    display: flex;
+    /* height: 15%; */
+}
+
+#ligne2{
+    display: flex;
+    /* height: 15%; */
+}
+
+#ligne3{
+    display: flex;
+    height: 400px;
+    align-content: stretch;
+}
+
+section h3{
+    text-transform: uppercase;
+}
+
+div[class="txtDansImg"] h3{
+    text-transform: capitalize;
+}
+
+div[class="w50 textContent"] a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#margeE{
+    margin: 20px;
+}
+
+#ligne4{
+    display: flex;
+    margin: 50px 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px ;
+}
+
+#people{
+    display: flex;
+    justify-content: space-around;
+    /* margin: 0 10px; */
+}
+
+#ligne5{
+    display: flex;
+    /* height: 15%; */
+}
+
+.onePerson{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+p + span{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.textContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+.imageR{
+    width: 300px;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w25{
+    width: 25%;
+}
+
+#imgPomme{
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    align-content: end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#imgPeche{
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-size: cover;
+    align-content: end;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.txtDansImg{
+    text-align: center;
+    margin: 0 70px 20px 70px;
+}
+
+section[id="ligne4"] img{
+    border-radius: 50%;
+    height: 90px;
+}
+
+#bottomPage{
+    background-color: hsl(168, 34%, 41%);
+    text-align: center;
+    padding: 15px;
+}
+
+#reseaux{
+    margin-top: 50px;
+}
+
+#reseaux img, li{
+    margin: 10px;
+}
+
+.liens{
+    margin: 10px;
+    text-decoration: none;
+}
