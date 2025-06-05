@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO</title>
+    <link rel="stylesheet" href="exo.css">
+</head>
+
+<body>
+    <header>
+        <!-- Premier menu avec les images -->
+        <div id="menu">
+            <div class="cercleImg svgMenu">
+                <svg fill="white" height="800px" width="800px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 511.953 511.953" xml:space="preserve">
+                    <g transform="translate(-1)">
+                        <g>
+                            <g>
+                                <path d="M256.995,149.287c-11.776,0-21.333,9.579-21.333,21.333c0,11.755,9.557,21.333,21.333,21.333s21.333-9.579,21.333-21.333
+                                    C278.328,158.865,268.771,149.287,256.995,149.287z" />
+                                <path
+                                    d="M365.518,38.887C325.987,6.311,274.04-6.639,223.011,3.239C154.147,16.615,100.152,72.273,88.718,141.735
+                                    c-6.784,41.003,0.725,81.216,21.696,116.267l8.704,14.528c27.861,46.443,56.64,94.485,79.701,143.893l38.848,83.221
+                                    c3.499,7.509,11.029,12.309,19.328,12.309s15.829-4.8,19.328-12.309l34.965-74.923c23.317-49.984,52.096-98.688,79.957-145.792
+                                    l12.971-22.016c15.339-26.091,23.445-55.936,23.445-86.293C427.662,119.484,405.006,71.463,365.518,38.887z M256.995,234.62
+                                    c-35.285,0-64-28.715-64-64s28.715-64,64-64s64,28.715,64,64S292.28,234.62,256.995,234.62z" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <a class="positionRelativeSvg" href="">Location</a>
+            </div>
+            <div class="cercleImg svgMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="rgb(207, 218, 218)" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+                <a class="positionRelativeSvg" href="">Call : +01 123455678990</a>
+            </div>
+            <div class="cercleImg svgMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="rgb(207, 218, 218)" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+                <a class="positionRelativeSvg" href="">demo@gmail.com </a>
+            </div>
+            <!-- Les images des réseaux sociaux -->
+            <div id="lesReseaux">
+                <svg class="cercleImg" fill="white" width="800px" height="800px" viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z" />
+                </svg>
+                <svg class="cercleImg" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.83 8.00001C19.83 8.17001 19.83 8.35001 19.83 8.52001C19.8393 10.0302 19.5487 11.5272 18.9751 12.9242C18.4014 14.3212 17.5562 15.5904 16.4883 16.6583C15.4204 17.7262 14.1512 18.5714 12.7542 19.1451C11.3572 19.7187 9.86017 20.0093 8.34999 20C6.15213 20.0064 3.9992 19.3779 2.14999 18.19C2.47999 18.19 2.78999 18.19 3.14999 18.19C4.96345 18.19 6.72433 17.5808 8.14999 16.46C7.30493 16.4524 6.48397 16.1774 5.80489 15.6744C5.12581 15.1714 4.62349 14.4662 4.36999 13.66C4.62464 13.7006 4.88213 13.7207 5.13999 13.72C5.49714 13.7174 5.85281 13.6738 6.19999 13.59C5.2965 13.4056 4.48448 12.9147 3.90135 12.2003C3.31822 11.486 2.99981 10.5921 2.99999 9.67001C3.55908 9.97841 4.18206 10.153 4.81999 10.18C4.25711 9.80767 3.79593 9.30089 3.47815 8.7055C3.16038 8.11011 2.99604 7.44489 2.99999 6.77001C3.00124 6.06749 3.18749 5.37769 3.53999 4.77001C4.55172 6.01766 5.81423 7.03889 7.24575 7.76757C8.67727 8.49625 10.2459 8.91613 11.85 9.00001C11.7865 8.69737 11.753 8.38922 11.75 8.08001C11.7239 7.25689 11.9526 6.44578 12.4047 5.75746C12.8569 5.06913 13.5104 4.53714 14.2762 4.23411C15.0419 3.93109 15.8826 3.87181 16.6833 4.06437C17.484 4.25693 18.2057 4.69195 18.75 5.31001C19.655 5.12822 20.5214 4.78981 21.31 4.31001C21.0088 5.24317 20.3754 6.0332 19.53 6.53001C20.3337 6.44316 21.1194 6.23408 21.86 5.91001C21.3116 6.71097 20.6361 7.41694 19.86 8.00001H19.83Z"
+                        fill="white" />
+                </svg>
+                <svg class="cercleImg" fill="white" width="800px" height="800px" viewBox="0 0 1920 1920"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M478.234 600.75V1920H.036V600.75h478.198Zm720.853-2.438v77.737c69.807-45.056 150.308-71.249 272.38-71.249 397.577 0 448.521 308.666 448.521 577.562v737.602h-480.6v-700.836c0-117.867-42.173-140.215-120.15-140.215-74.134 0-120.151 23.55-120.151 140.215v700.836h-480.6V598.312h480.6ZM239.099 0c131.925 0 239.099 107.294 239.099 239.099s-107.174 239.099-239.1 239.099C107.295 478.198 0 370.904 0 239.098 0 107.295 107.294 0 239.099 0Z"
+                        fill-rule="evenodd" />
+                </svg>
+                <svg class="cercleImg" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                        fill="white" />
+                    <path
+                        d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <!-- Fin des images des réseaux sociaux -->
+        </div>
+        <!--  Fin menu avec les images-->
+        <hr>
+        <!-- Second menu avec le menu déroulant -->
+        <div id="sousMenu">
+            <label for="finder" class="margeGauche">Finder</label>
+
+            <input type="checkbox" name="imgMenu" id="imgMenu">
+            <label for="imgMenu" class="margeDroit" id="btnSousMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </label>
+            <label for="imgMenu" class="croix">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </label>
+            <!-- Le menu déroulant -->
+            <div id="menuDeroulant">
+                <ul>
+                    <a href="">
+                        <li>home</li>
+                    </a>
+                    <a href="#aboutUs">
+                        <li>about</li>
+                    </a>
+                    <a href="#ourServices">
+                        <li>services</li>
+                    </a>
+                    <a href="#ourTeam">
+                        <li>team</li>
+                    </a>
+                    <a href="#getInTouch">
+                        <li>contact us</li>
+                    </a>
+                    <a href="#">
+                        <li>login</li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <!-- Fin du menu déroulant -->
+        </div>
+        <input type="checkbox" name="finder" id="finder">
+        <!-- Fin menu avec le menu déroulant -->
+        <section class="centrer" id="sectionHeader">
+            <div class="headerBougeant">
+                <h1>We Provide Welding Services</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis fugit, sed tempora praesentium
+                    commodi
+                    error, hic recusandae repudiandae neque ad molestias, atque veritatis labore quae eveniet autem in
+                </p>
+                <button class="buttonVert margeEnBas">Contact Us</button>
+            </div>
+            <div class="paddingEnBas">
+                <button class="tailleBtn">
+                    <svg width="500px" height="500px" viewBox="0 0 24 24" fill="green"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="Arrow / Arrow_Left_SM">
+                            <path id="Vector" d="M17 12H7M7 12L11 16M7 12L11 8" stroke="#004445" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </button>
+                <button class="tailleBtn">
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="Arrow / Arrow_Right_SM">
+                            <path id="Vector" d="M7 12H17M17 12L13 8M17 12L13 16" stroke="#004445" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="ourServices" class="centrer">
+            <h2>Our Services</h2>
+            <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything believable. If
+                you are going to
+                use a passage of Lorem Ipsum, you need to be sure there isn't anything
+            </p>
+            <!-- Partie du caroussel avec les services présentés -->
+            <div id="carousselContainer">
+                <div id="caroussel" class="flexC">
+                    <label for="service1" class="service">
+                        <img src="./images/s1.png" alt="">
+                        <h2>Home Welding</h2>
+                        <p>
+                            when looking at its layout. The point of
+                            using Lorem Ipsum is that it has a more or-less normal
+                        </p>
+                    </label>
+                    <label for="service2" class="service">
+                        <img src="./images/s2.png" alt="">
+                        <h2>Welding</h2>
+                        <p>
+                            when looking at its layout. The point of
+                            using Lorem Ipsum is that it has a more or-less normal
+                        </p>
+                    </label>
+                    <label for="service3" class="service">
+                        <img src="./images/s3.png" alt="">
+                        <h2>Welding</h2>
+                        <p>
+                            when looking at its layout. The point of
+                            using Lorem Ipsum is that it has a more or-less normal
+                        </p>
+                    </label>
+                    <!-- <label for="service4" class="service">
+                            <img src="./images/s4.png" alt="">
+                            <h2>Machine Welding</h2>
+                            <p>
+                                when looking at its layout. The point of
+                                using Lorem Ipsum is that it has a more or-less normal
+                            </p>
+                        </label>
+                        <label for="service5" class="service">
+                            <img src="./images/s5.png" alt="">
+                            <h2>Welding</h2>
+                            <p>
+                                when looking at its layout. The point of
+                                using Lorem Ipsum is that it has a more or-less normal
+                            </p>
+                        </label>
+                        <label for="service6" class="service">
+                            <img src="./images/s6.png" alt="">
+                            <h2>Car Welding</h2>
+                            <p>
+                                when looking at its layout. The point of
+                                using Lorem Ipsum is that it has a moreor-less normal
+                            </p>
+                        </label> -->
+                </div>
+            </div><br>
+            <div>
+                <input type="radio" name="radioService" id="service1">
+                <input type="radio" name="radioService" id="service2">
+                <input type="radio" name="radioService" id="service3">
+                <input type="radio" name="radioService" id="service4">
+                <input type="radio" name="radioService" id="service5">
+                <input type="radio" name="radioService" id="service6">
+            </div><br>
+            <!-- Fin du caroussel avec les services présentés -->
+            <button class="buttonVert">Read More</button>
+        </section>
+
+        <div id="aboutUs" class="dFlex">
+            <section class="w50m">
+                <h2>About Us</h2>
+                <p>
+                    There are many variations of passages of Lorem
+                    Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, orThere
+                    are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in
+                    some form, by injected humour, orThere are many
+                    variations of passages of Lorem Ipsum available, but
+                    the majority have suffered alteration in some form, by
+                    injected humour, or
+                </p>
+                <button class="buttonVert margeEnBas">Read More</button>
+            </section>
+            <img class="w50m" src="./images/about-img.jpg" alt="">
+        </div>
+
+        <section id="ourTeam">
+            <h2 class="centrer">Our Team</h2>
+            <p class="margeInterieurTeam centrer">
+                Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam nulla
+                mauris iaculis.
+                Erat eget vitae malesuada, tortor tincidunt porta lorem lectus.
+            </p>
+            <div id="threeImg" class="margeInterieurTeam">
+                <div id="anderson" class="w30 margeEnBas">
+                    <img class="bordureHaut" src="./images/t1.jpg" alt="">
+                    <div class="bordureBas nomMetier">
+                        <span>Martin Anderson</span><br>
+                        <span>supervisor</span>
+                    </div>
+                </div>
+                <div id="denny" class="w30 margeEnBas">
+                    <img class="bordureHaut" src="./images/t2.jpg" alt="">
+                    <div class="bordureBas nomMetier">
+                        <span>Denny Butler</span><br>
+                        <span>supervisor</span>
+                    </div>
+                </div>
+                <div id="nathan" class="w30 margeEnBas">
+                    <img class="bordureHaut" src="./images/t3.jpg" alt="">
+                    <div class="bordureBas nomMetier">
+                        <span>Nathan Mcpherson</span><br>
+                        <span>supervisor</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="getInTouch">
+            <img class="w50" src="./images/contact-img.jpg" alt="">
+            <section id="cForm" class="w50">
+                <h2 class="centrer pBottom">Get In Touch</h2>
+                <!-- Début du formulaire -->
+                <form action="" id="formulaire">
+                    <input type="text" placeholder="Your Name"><br>
+                    <input type="text" placeholder="Phone Number"><br>
+                    <select name="" id="">
+                        <option value="">Select Service</option>
+                        <option value="">1</option>
+                    </select><br>
+                    <input type="email" placeholder="Email"><br>
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea><br>
+                    <button class="buttonVert" type="submit">SEND</button>
+                </form>
+                <!-- Fin du formulaire -->
+            </section>
+        </div>
+
+        <section class="centrer" id="testimonial">
+            <h2>Testimonial</h2>
+            <div id="reduit">
+                <img class="styleImg" src="./images/client.jpg" alt="">
+                <h3>Jone Mark</h3>
+                <q class="w50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur totam cumque, labore
+                    adipisci eos maxime sequi placeat at accusamus ex natus laborum iusto? Provident, fugit.
+                    Facere quae consequatur, doloribus sapiente? Deserunt velit recusandae assumenda impedit nulla
+                    quaerat qui placeat veritatis.
+                </q>
+                <svg fill="green" width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z" />
+                </svg>
+            </div>
+            <div id="btnTestimonials">
+                <button class="btnNoir">
+                    <svg class="blanc" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                    </svg>
+                </button>
+                <button class="btnNoir">
+                    <svg class="blanc" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="centrer">
+        <div id="footerForme">
+            <div id="flexH" class="flex margeInterieure">
+                <h2 id="sansMarge">Finter</h2>
+                <div class="flex">
+                    <div>
+                        <svg fill="white" height="800px" width="800px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 511.953 511.953" xml:space="preserve">
+                            <g transform="translate(-1)">
+                                <g>
+                                    <g>
+                                        <path d="M256.995,149.287c-11.776,0-21.333,9.579-21.333,21.333c0,11.755,9.557,21.333,21.333,21.333s21.333-9.579,21.333-21.333
+                                    C278.328,158.865,268.771,149.287,256.995,149.287z" />
+                                        <path
+                                            d="M365.518,38.887C325.987,6.311,274.04-6.639,223.011,3.239C154.147,16.615,100.152,72.273,88.718,141.735
+                                    c-6.784,41.003,0.725,81.216,21.696,116.267l8.704,14.528c27.861,46.443,56.64,94.485,79.701,143.893l38.848,83.221
+                                    c3.499,7.509,11.029,12.309,19.328,12.309s15.829-4.8,19.328-12.309l34.965-74.923c23.317-49.984,52.096-98.688,79.957-145.792
+                                    l12.971-22.016c15.339-26.091,23.445-55.936,23.445-86.293C427.662,119.484,405.006,71.463,365.518,38.887z M256.995,234.62
+                                    c-35.285,0-64-28.715-64-64s28.715-64,64-64s64,28.715,64,64S292.28,234.62,256.995,234.62z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="positionRelative">Location</span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                        </svg>
+                        <span class="positionRelative">+01 123455678990</span>
+                    </div>
+                </div>
+                <div id="reseauFooter">
+                    <svg class="imgReseaux margeDroit" fill="white" width="800px" height="800px" viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.95 5.005l-3.306-.004c-3.206 0-5.277 2.124-5.277 5.415v2.495H10.05v4.515h3.317l-.004 9.575h4.641l.004-9.575h3.806l-.003-4.514h-3.803v-2.117c0-1.018.241-1.533 1.566-1.533l2.366-.001.01-4.256z" />
+                    </svg>
+                    <svg class="imgReseaux margeDroit" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.83 8.00001C19.83 8.17001 19.83 8.35001 19.83 8.52001C19.8393 10.0302 19.5487 11.5272 18.9751 12.9242C18.4014 14.3212 17.5562 15.5904 16.4883 16.6583C15.4204 17.7262 14.1512 18.5714 12.7542 19.1451C11.3572 19.7187 9.86017 20.0093 8.34999 20C6.15213 20.0064 3.9992 19.3779 2.14999 18.19C2.47999 18.19 2.78999 18.19 3.14999 18.19C4.96345 18.19 6.72433 17.5808 8.14999 16.46C7.30493 16.4524 6.48397 16.1774 5.80489 15.6744C5.12581 15.1714 4.62349 14.4662 4.36999 13.66C4.62464 13.7006 4.88213 13.7207 5.13999 13.72C5.49714 13.7174 5.85281 13.6738 6.19999 13.59C5.2965 13.4056 4.48448 12.9147 3.90135 12.2003C3.31822 11.486 2.99981 10.5921 2.99999 9.67001C3.55908 9.97841 4.18206 10.153 4.81999 10.18C4.25711 9.80767 3.79593 9.30089 3.47815 8.7055C3.16038 8.11011 2.99604 7.44489 2.99999 6.77001C3.00124 6.06749 3.18749 5.37769 3.53999 4.77001C4.55172 6.01766 5.81423 7.03889 7.24575 7.76757C8.67727 8.49625 10.2459 8.91613 11.85 9.00001C11.7865 8.69737 11.753 8.38922 11.75 8.08001C11.7239 7.25689 11.9526 6.44578 12.4047 5.75746C12.8569 5.06913 13.5104 4.53714 14.2762 4.23411C15.0419 3.93109 15.8826 3.87181 16.6833 4.06437C17.484 4.25693 18.2057 4.69195 18.75 5.31001C19.655 5.12822 20.5214 4.78981 21.31 4.31001C21.0088 5.24317 20.3754 6.0332 19.53 6.53001C20.3337 6.44316 21.1194 6.23408 21.86 5.91001C21.3116 6.71097 20.6361 7.41694 19.86 8.00001H19.83Z"
+                            fill="white" />
+                    </svg>
+                    <svg class="imgReseaux margeDroit" fill="white" width="80px" height="80px" viewBox="0 0 1920 1920"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M478.234 600.75V1920H.036V600.75h478.198Zm720.853-2.438v77.737c69.807-45.056 150.308-71.249 272.38-71.249 397.577 0 448.521 308.666 448.521 577.562v737.602h-480.6v-700.836c0-117.867-42.173-140.215-120.15-140.215-74.134 0-120.151 23.55-120.151 140.215v700.836h-480.6V598.312h480.6ZM239.099 0c131.925 0 239.099 107.294 239.099 239.099s-107.174 239.099-239.1 239.099C107.295 478.198 0 370.904 0 239.098 0 107.295 107.294 0 239.099 0Z"
+                            fill-rule="evenodd" />
+                    </svg>
+                    <svg class="imgReseaux margeDroit" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                            fill="white" />
+                        <path
+                            d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="dFlex">
+                <div class="w50a margeEnBas">
+                    <h2>COMPANY</h2>
+                    <p>
+                        Randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem
+                        Ipsum, you need to be sure
+                    </p>
+                </div>
+                <div class="w50a">
+                    <h2>NEWSLETTER</h2>
+                    <input class="w100" type="text" placeholder="Enter Your Email"><br>
+                    <button id="btnFooter" class="margeEnHaut">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="dFlex">
+                <div class="w50a">
+                    <h2>SERVICES</h2>
+                    <p>
+                        Randomised words which don't look even slightly
+                        believable. If you are going to use a passage of Lorem
+                        Ipsum, you need to be sure
+                    </p>
+                </div>
+                <div class="w50a">
+                    <h2>USEFUL LINKS</h2>
+                    <ul>
+                        <a href="">
+                            <li>home</li>
+                        </a>
+                        <a href="#aboutUs">
+                            <li>about</li>
+                        </a>
+                        <a href="#ourServices">
+                            <li>services</li>
+                        </a>
+                        <a href="#ourTeam">
+                            <li>team</li>
+                        </a>
+                        <a href="#getInTouch">
+                            <li>contact us</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <span><img id="imgMini" src="./images/copyright.png" alt=""> 2025 All Rights Reserved By Free Html
+            Templates
+        </span>
+    </footer>
+</body>
+
+</html>
